@@ -1,0 +1,14 @@
+[project]
+name = "rachata-373-happy-paws"
+version = "0.1.0"
+description = "A simple Happy Paws Python project"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.141.1",
+    "fastmcp>=4.0.10",
+    "mariadb>=1.1.14",
+    "nicegui>=3.17.1",
+    "python-dotenv>=1.2.3",
+    "uvicorn>=0.54.0",
+]
