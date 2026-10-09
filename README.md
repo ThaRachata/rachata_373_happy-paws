@@ -22,4 +22,21 @@ Activate it in PowerShell and run the project:
 uv run python main.py
 ```
 
-The expected output is `Hello from happy-paws!`.
+Start MariaDB before running the application:
+
+```powershell
+docker compose up -d
+```
+
+The expected output is:
+
+```text
+Happy Paws Pet Hotel
+Connected to MariaDB successfully!
+```
+
+Create the application tables once the database is running:
+
+```powershell
+uv run python -m app.database.create_tables
+```
